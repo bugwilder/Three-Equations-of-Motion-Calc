@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equations of Motion Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <h1>Equations of Motion Calculator</h1>
+        <p class="subtitle">Solve for one unknown variable</p>
+
+        <div class="equation-selector">
+            <label for="equation">Select Equation:</label>
+
+            <select id="equation" onchange="loadEquation()">
+                <option value="1">1. v = u + at</option>
+                <option value="2">2. s = ut + ½at²</option>
+                <option value="3">3. v² = u² + 2as</option>
+            </select>
+        </div>

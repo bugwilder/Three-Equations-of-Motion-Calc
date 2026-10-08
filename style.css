@@ -1,0 +1,221 @@
+      </div>
+
+        <button class="calculate-btn" onclick="calculate()">
+            Calculate
+        </button>
+
+        <button class="clear-btn" onclick="clearCalculator()">
+            Clear
+        </button>
+
+        <div class="result" id="result">
+            Enter your values above.
+        </div>
+
+        <div class="legend">
+            <h3>Variables</h3>
+            <p><strong>u</strong> = Initial Velocity</p>
+            <p><strong>v</strong> = Final Velocity</p>
+            <p><strong>a</strong> = Acceleration</p>
+            <p><strong>t</strong> = Time</p>
+            <p><strong>s</strong> = Displacement</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+style.css
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    background: #f1f3f6;
+    color: #222;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 550px;
+
+    background: white;
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.equation-selector label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #bbb;
+    border-radius: 6px;
+
+    background: white;
+}
+
+.equation-display {
+    margin: 25px 0;
+
+    padding: 18px;
+
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    background: #eef2f7;
+
+    border-radius: 8px;
+}
+
+.variables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.variable {
+    display: flex;
+    flex-direction: column;
+}
+
+.variable label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.variable input {
+    padding: 11px;
+
+    font-size: 16px;
+
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+.variable input:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.calculate-btn,
+.clear-btn {
+    width: 100%;
+    padding: 13px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.calculate-btn {
+    background: #333;
+    color: white;
+}
+
+.calculate-btn:hover {
+    background: #555;
+}
+
+.clear-btn {
+    margin-top: 10px;
+
+    background: #ddd;
+    color: #222;
+}
+
+.clear-btn:hover {
+    background: #ccc;
+}
+
+.result {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    background: #f0f0f0;
+
+    border-radius: 8px;
+
+    min-height: 60px;
+}
+
+.legend {
+    margin-top: 25px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #ddd;
+
+    color: #555;
+}
+
+.legend h3 {
+    margin-top: 0;
+    color: #222;
+}
+
+.legend p {
+    margin: 6px 0;
+}
+
+@media (max-width: 500px) {
+
+    .calculator {
+        padding: 20px;
+    }
+
+    .variables {
+        grid-template-columns: 1fr;
+    }
+
+    .equation-display {
+        font-size: 23px;
+    }
+}
