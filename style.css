@@ -1,34 +1,4 @@
-      </div>
-
-        <button class="calculate-btn" onclick="calculate()">
-            Calculate
-        </button>
-
-        <button class="clear-btn" onclick="clearCalculator()">
-            Clear
-        </button>
-
-        <div class="result" id="result">
-            Enter your values above.
-        </div>
-
-        <div class="legend">
-            <h3>Variables</h3>
-            <p><strong>u</strong> = Initial Velocity</p>
-            <p><strong>v</strong> = Final Velocity</p>
-            <p><strong>a</strong> = Acceleration</p>
-            <p><strong>t</strong> = Time</p>
-            <p><strong>s</strong> = Displacement</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-style.css
-
-* {
+     * {
     box-sizing: border-box;
 }
 
